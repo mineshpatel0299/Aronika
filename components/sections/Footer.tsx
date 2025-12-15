@@ -18,13 +18,7 @@ const quickLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
-const services = [
-  "Wealth Management",
-  "Retirement Planning",
-  "Investment Advisory",
-  "Business Consulting",
-  "Tax Strategy",
-];
+
 
 const contactDetails = [
   { icon: Mail, label: "info@aronikafinancial.com" },
@@ -115,16 +109,8 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-white">
-                  Signature Services
-                </h4>
-                <ul className="mt-4 space-y-2 text-gray-400">
-                  {services.map((service) => (
-                    <li key={service} className="text-sm">
-                      {service}
-                    </li>
-                  ))}
-                </ul>
+                
+                
               </div>
             </div>
 

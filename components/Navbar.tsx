@@ -138,10 +138,7 @@ export default function Navbar() {
             >
               Book Consultation
             </Link>
-            <div className="flex items-center gap-2 rounded-xl bg-gray-50 px-4 py-3 text-sm text-gray-600 shadow-inner">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" aria-hidden="true" />
-              Now accepting new private clients
-            </div>
+            
           </div>
         </div>
       </div>
