@@ -39,7 +39,10 @@ export default function Process() {
   return (
     <>
       {/* Mobile View - Vertical Timeline */}
-      <section id="process" className="block lg:hidden py-20 px-4 sm:px-6 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section
+        id="process"
+        className="block lg:hidden py-20 px-4 sm:px-6 bg-gradient-to-b from-white via-gray-50 to-white"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block mb-4">
@@ -62,7 +65,10 @@ export default function Process() {
             {/* Steps */}
             <div className="space-y-8">
               {PROCESS_PHASES.map((phase, index) => (
-                <div key={phase.id} className="relative pl-16">
+                <div
+                  key={phase.id}
+                  className="relative pl-16"
+                >
                   {/* Number Badge */}
                   <div className="absolute left-0 w-12 h-12 bg-gradient-to-br from-brand-red to-brand-red/80 rounded-full flex items-center justify-center shadow-lg z-10">
                     <span className="text-lg font-bold text-white">

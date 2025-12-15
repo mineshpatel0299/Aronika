@@ -77,6 +77,7 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="inline-block mb-4"
+            data-aos="fade-up"
           >
             <span className="bg-brand-red/10 text-brand-red px-4 py-2 rounded-full text-sm font-medium">
               Our Services
@@ -88,6 +89,8 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-4xl font-bold text-brand-black mb-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             Comprehensive Financial Solutions
           </motion.h2>
@@ -97,6 +100,8 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-gray-600 max-w-2xl mx-auto text-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             Tailored financial services designed to meet your unique needs and goals
           </motion.p>
@@ -197,7 +202,7 @@ export default function Services() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-600 mb-6">Can't find what you're looking for?</p>
+          <p className="text-gray-600 mb-6">Can&apos;t find what you&apos;re looking for?</p>
           <a
             href="#contact"
             className="inline-block bg-brand-red text-white px-8 py-3.5 rounded-md hover:bg-brand-red/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg"

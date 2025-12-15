@@ -9,24 +9,24 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-block">
+            <div className="inline-block" data-aos="fade-right" data-aos-delay="100">
               <span className="bg-brand-red/10 text-brand-red px-4 py-2 rounded-full text-sm font-medium">
                 Trusted by 500+ Clients
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-black leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-black leading-tight" data-aos="fade-right" data-aos-delay="200">
               Your Financial Future,{" "}
               <span className="text-brand-red">Secured</span>
             </h1>
 
-            <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-xl" data-aos="fade-right" data-aos-delay="300">
               Expert financial advisory services tailored to help you achieve your goals.
-              From wealth management to retirement planning, we're here to guide your journey.
+              From wealth management to retirement planning, we&apos;re here to guide your journey.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 py-4">
+            <div className="grid grid-cols-3 gap-6 py-4" data-aos="fade-up" data-aos-delay="400">
               <div className="text-center sm:text-left">
                 <div className="text-3xl font-bold text-brand-black">25+</div>
                 <div className="text-sm text-gray-600">Years Experience</div>
@@ -41,7 +41,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4" data-aos="fade-up" data-aos-delay="500">
               <a
                 href="#consultation"
                 className="bg-brand-red text-white px-8 py-3.5 rounded-md hover:bg-brand-red/90 transition-all duration-200 font-medium text-center shadow-md hover:shadow-lg"
@@ -64,7 +64,7 @@ export default function Hero() {
               {/* Floating Cards with Icons */}
               <div className="relative z-10 space-y-6">
                 {/* Growth Chart Card */}
-                <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 transform hover:scale-105 transition-all duration-300 ml-auto max-w-md animate-float">
+                <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 transform hover:scale-105 transition-all duration-300 ml-auto max-w-md animate-float" data-aos="fade-left" data-aos-delay="200">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function Hero() {
                 </div>
 
                 {/* Financial Planning Card */}
-                <div className="bg-gradient-to-br from-brand-red to-brand-red/80 p-6 rounded-2xl shadow-xl text-white transform hover:scale-105 transition-all duration-300 max-w-sm animate-float-delayed">
+                <div className="bg-gradient-to-br from-brand-red to-brand-red/80 p-6 rounded-2xl shadow-xl text-white transform hover:scale-105 transition-all duration-300 max-w-sm animate-float-delayed" data-aos="fade-left" data-aos-delay="400">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,7 +98,7 @@ export default function Hero() {
                 </div>
 
                 {/* Savings Card */}
-                <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 transform hover:scale-105 transition-all duration-300 max-w-xs ml-auto animate-float">
+                <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 transform hover:scale-105 transition-all duration-300 max-w-xs ml-auto animate-float" data-aos="fade-left" data-aos-delay="600">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
