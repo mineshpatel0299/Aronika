@@ -56,11 +56,7 @@ const itemVariants = {
   hidden: { y: 20, opacity: 0 },
   visible: {
     y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut"
-    }
+    opacity: 1
   }
 };
 
@@ -117,6 +113,7 @@ export default function Services() {
             <motion.div
               key={index}
               variants={itemVariants}
+              transition={{ duration: 0.5 }}
               onHoverStart={() => setHoveredIndex(index)}
               onHoverEnd={() => setHoveredIndex(null)}
               className="group relative"
