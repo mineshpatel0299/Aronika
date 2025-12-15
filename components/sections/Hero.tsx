@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative mt-12 sm:mt-16 pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gray-100 rounded-full blur-3xl -z-10"></div>
@@ -9,11 +9,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-block" data-aos="fade-right" data-aos-delay="100">
-              <span className="bg-brand-red/10 text-brand-red px-4 py-2 rounded-full text-sm font-medium">
-                Trusted by 500+ Clients
-              </span>
-            </div>
+            
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-black leading-tight" data-aos="fade-right" data-aos-delay="200">
               Your Financial Future,{" "}
