@@ -1,6 +1,17 @@
+"use client";
+
+import Link from "next/link";
+
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+    <section id="about" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-brand-red/5 -z-10"></div>
+
+      {/* Decorative gradient blobs */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-brand-red/10 to-transparent rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-gray-200/40 via-gray-100/20 to-transparent rounded-full blur-3xl -z-10"></div>
+
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div
@@ -32,11 +43,16 @@ export default function About() {
               financial dreams. Our personalized approach ensures that every strategy is tailored
               to your unique situation and goals.
             </p>
+            <p className="text-gray-600 leading-relaxed">
+              Founded in 1999, Aronika Financial has grown into a trusted name in financial advisory,
+              managing over ₹2 billion in assets with unwavering commitment to transparency,
+              integrity, and client success.
+            </p>
             <ul className="space-y-4">
               {[
-                "Certified Financial Planners with proven track records",
+                "SEBI-registered advisors with proven track records",
                 "Personalized strategies based on your goals",
-                "Transparent pricing with no hidden fees",
+                "Transparent fee-only model with no hidden costs",
               ].map((text, index) => (
                 <li key={text} className="flex items-start gap-3" data-aos="fade-up" data-aos-delay={200 + index * 100}>
                   <span className="text-brand-red mt-1">✓</span>
@@ -44,6 +60,17 @@ export default function About() {
                 </li>
               ))}
             </ul>
+            <div className="pt-4">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 bg-brand-red text-white px-6 py-3 rounded-md hover:bg-brand-red/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg"
+              >
+                Learn More About Us
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

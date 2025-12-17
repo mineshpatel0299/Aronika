@@ -1,6 +1,13 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50" data-aos="fade-up">
+    <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden" data-aos="fade-up">
+      {/* Dynamic Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-red/10 via-gray-50 to-brand-red/5 -z-20"></div>
+
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-brand-red/15 via-brand-red/5 to-transparent rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-gradient-to-tl from-gray-200/50 via-transparent to-brand-red/5 rounded-full blur-3xl -z-10"></div>
+
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-brand-black mb-6" data-aos="fade-up" data-aos-delay="100">
           Ready to Get Started?

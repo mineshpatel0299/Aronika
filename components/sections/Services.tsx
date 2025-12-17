@@ -65,9 +65,18 @@ export default function Services() {
 
   return (
     <section id="services" className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gray-100 rounded-full blur-3xl -z-10"></div>
+      {/* Multi-layer Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-red/8 via-white to-gray-100 -z-20"></div>
+      <div className="absolute inset-0 bg-gradient-to-tl from-brand-red/5 via-transparent to-gray-50 -z-20"></div>
+
+      {/* Enhanced decorative gradient elements */}
+      <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-gradient-to-bl from-brand-red/20 via-brand-red/8 to-transparent rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-brand-red/15 via-brand-red/5 to-gray-100/60 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-gradient-to-l from-brand-red/10 via-transparent to-transparent rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-1/4 right-1/3 w-[450px] h-[450px] bg-gradient-to-br from-gray-200/40 via-brand-red/5 to-transparent rounded-full blur-3xl -z-10"></div>
+
+      {/* Diagonal gradient sweep */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-brand-red/3 to-transparent -z-20"></div>
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">

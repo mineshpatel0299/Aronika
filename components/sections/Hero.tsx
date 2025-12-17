@@ -1,9 +1,13 @@
 export default function Hero() {
   return (
     <section className="relative mt-12 sm:mt-16 pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 via-white to-gray-50 -z-20"></div>
+
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gray-100 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-brand-red/20 via-brand-red/10 to-transparent rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-gray-200/50 via-gray-100/30 to-transparent rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-brand-red/5 to-transparent rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

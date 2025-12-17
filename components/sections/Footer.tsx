@@ -36,16 +36,25 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer
-      className="bg-brand-black text-white"
+      className="relative bg-brand-black text-white overflow-hidden"
       data-aos="fade-up"
       data-aos-delay="150"
     >
       <div className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 opacity-60">
-          <div className="h-full w-full bg-gradient-to-br from-brand-black via-brand-black/90 to-brand-black" />
+        {/* Enhanced gradient background */}
+        <div className="absolute inset-0">
+          <div className="h-full w-full bg-gradient-to-br from-brand-black via-brand-black to-brand-red/20" />
         </div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-brand-red/5 to-transparent" />
+
+        {/* Decorative gradient elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-brand-red/20 via-brand-red/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-brand-red/10 via-transparent to-transparent rounded-full blur-3xl" />
+
         <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between">
+          <div className="relative flex flex-col gap-6 rounded-3xl border border-white/10 p-6 backdrop-blur-md sm:flex-row sm:items-center sm:justify-between overflow-hidden">
+            {/* CTA gradient background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-brand-red/10 via-white/5 to-brand-red/10 -z-10"></div>
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-brand-gold">
                 Ready to invest smarter?
